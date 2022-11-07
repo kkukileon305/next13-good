@@ -8,11 +8,11 @@ export type NavData = {
 
 const navList: NavData[] = [
   {
-    title: 'products',
+    title: 'Products',
     url: 'products',
   },
   {
-    title: 'todos',
+    title: 'Todos',
     url: 'todos',
   },
 ];
@@ -20,7 +20,7 @@ const navList: NavData[] = [
 const Nav = () => {
   return (
     <nav className='w-[200px] min-h-[100vh] fixed bg-blue-400'>
-      <h1 className='font-bold text-3xl mb-2 px-4 py-4'>
+      <h1 className='font-bold text-white text-3xl mb-2 px-4 py-4'>
         <Link href={'/'}>Main</Link>
       </h1>
 
