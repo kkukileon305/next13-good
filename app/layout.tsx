@@ -7,7 +7,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <body className='w-[1060px] flex mx-auto'>
         <Nav />
-        <main className='ml-[200px] w-[calc(100%-200px)] min-h-[100vh]'>{children}</main>
+        <main className='ml-[200px] w-[calc(100%-200px)] min-h-[100vh] bg-gray-200'>{children}</main>
       </body>
     </html>
   );
