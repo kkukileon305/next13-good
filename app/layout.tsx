@@ -1,18 +1,14 @@
-import './globals.css'
+import './globals.css';
+import Nav from './Nav';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html lang='en'>
       <head />
-      <body>{children}</body>
+      <body className='w-[1060px] flex mx-auto'>
+        <Nav />
+        <main className='ml-[200px] w-[calc(100%-200px)] min-h-[100vh]'>{children}</main>
+      </body>
     </html>
-  )
+  );
 }
